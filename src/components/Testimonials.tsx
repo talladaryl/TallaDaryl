@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import ulrich from "@/assets/ulrich.jpeg";
+import profilePhoto from "@/assets/profile-photos.jpg";
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,8 +27,7 @@ const Testimonials = () => {
       id: 1,
       name: "Charles ENOL",
       role: "Consultant informatique",
-      avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
+      avatar: profilePhoto,
       content:
         "Travail de qualité professionnelle avec un souci du détail impressionnant",
       rating: 5,
@@ -35,8 +36,7 @@ const Testimonials = () => {
       id: 2,
       name: "TCHIENGANG Yvan",
       role: "Développeur full-stack",
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+      avatar: profilePhoto,
       content: "Expert technique avec une excellente communication",
       rating: 5,
     },
@@ -44,8 +44,7 @@ const Testimonials = () => {
       id: 3,
       name: "ULRICH",
       role: "Développeur & admin réseau",
-      avatar:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face",
+      avatar: ulrich,
       content: "Très concentré, performance, rigueur et discipline",
       rating: 5,
     },
