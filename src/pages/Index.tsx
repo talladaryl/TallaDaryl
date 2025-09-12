@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background text-foreground transition-colors duration-500">
       <Navigation />
       <HorizontalNavigation />
       <Hero />
