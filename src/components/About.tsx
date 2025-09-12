@@ -68,9 +68,7 @@ const About = () => {
         <FaLaravel key="laravel" className="w-6 h-6 text-[#4ade80]" />,
         <SiCodeigniter key="codeigniter" className="w-6 h-6 text-[#4ade80]" />,
         <SiFastapi key="fastapi" className="w-6 h-6 text-[#4ade80]" />,
-        {
-          /* <FaFirebase key="firebase" className="w-6 h-6 text-[#4ade80]" /> */
-        },
+        // <FaFirebase key="firebase" className="w-6 h-6 text-[#4ade80]" />
       ],
     },
   ];

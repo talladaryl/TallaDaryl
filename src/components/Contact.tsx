@@ -8,6 +8,8 @@ import {
   Linkedin,
   Twitter,
 } from "lucide-react";
+import emailjs from "@emailjs/browser";
+// ...existing code...
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,6 +20,7 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const [responseMessage, setResponseMessage] = useState("");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -43,10 +46,44 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise((res) => setTimeout(res, 2000));
-    alert("Message envoyé ! Merci pour votre contact.");
-    setFormData({ name: "", email: "", subject: "", message: "" });
-    setIsSubmitting(false);
+    setResponseMessage("");
+    emailjs
+      .sendForm(
+        "service_4oc5by4", // ID service
+        "template_zjawzye", // Template admin
+        e.currentTarget,
+        "o-NB_4irLNskCG7oX" // Public key
+      )
+      .then(
+        () => {
+          // Envoi confirmation utilisateur
+          emailjs
+            .sendForm(
+              "service_4oc5by4", // ID service
+              "template_zlrpuxr", // Template utilisateur
+              e.currentTarget,
+              "o-NB_4irLNskCG7oX"
+            )
+            .then(
+              () => {
+                setResponseMessage("Message envoyé avec succès !");
+                setFormData({ name: "", email: "", subject: "", message: "" });
+              },
+              (error) => {
+                setResponseMessage(
+                  "Erreur lors de l'envoi du message utilisateur : " +
+                    error.text
+                );
+              }
+            );
+        },
+        (error) => {
+          setResponseMessage(
+            "Erreur lors de l'envoi du message admin : " + error.text
+          );
+        }
+      )
+      .finally(() => setIsSubmitting(false));
   };
 
   const contactInfo = [
@@ -105,6 +142,11 @@ const Contact = () => {
             <div className="bg-background/20 backdrop-blur-md rounded-3xl p-10 shadow-neon border border-accent/20">
               <h3 className="text-2xl font-bold mb-6">Envoyer un message</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
+                {responseMessage && (
+                  <p className="mb-4 text-center text-sm font-medium text-accent">
+                    {responseMessage}
+                  </p>
+                )}
                 <div className="grid md:grid-cols-2 gap-6">
                   <input
                     type="text"

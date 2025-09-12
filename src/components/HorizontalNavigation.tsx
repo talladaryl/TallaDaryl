@@ -13,7 +13,7 @@ const HorizontalNavigation = () => {
       <div className="flex items-center space-x-6">
         {/* Gmail */}
         <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=talladarylarsen85@gmail.com&su=&body="
+          href="mailto:talladarylarsen85@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-2 group"
