@@ -28,7 +28,7 @@ const Hero = () => {
   ];
 
   const socials = [
-    { icon: <Phone size={28} />, link: "https://wa.me/237658840985" }, // WhatsApp
+    { icon: <Phone size={28} />, link: "https://wa.me/237658940985" }, // WhatsApp
     { icon: <Facebook size={28} />, link: "https://facebook.com/" },
     { icon: <Twitter size={28} />, link: "https://twitter.com/DarylT.A.D/" },
     { icon: <Github size={28} />, link: "https://www.github.com/talladaryl/" },
