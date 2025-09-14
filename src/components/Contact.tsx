@@ -97,7 +97,7 @@ const Contact = () => {
       icon: Phone,
       title: "Téléphone",
       value: "+237 658 940 985",
-      link: "tel:+237658940985",
+      link: "https://wa.me/237658840985", // whatsapp
     },
     {
       icon: MapPin,

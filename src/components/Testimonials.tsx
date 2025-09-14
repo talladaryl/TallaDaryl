@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import ulrich from "@/assets/ulrich.jpeg";
 import profilePhoto from "@/assets/profile-photos.jpg";
+import PhotoIvan from "@/assets/ivan.jpg";
+
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,7 +38,7 @@ const Testimonials = () => {
       id: 2,
       name: "TCHIENGANG Yvan",
       role: "Développeur full-stack",
-      avatar: profilePhoto,
+      avatar: PhotoIvan,
       content: "Expert technique avec une excellente communication",
       rating: 5,
     },

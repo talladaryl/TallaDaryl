@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="flex flex-col items-center lg:items-start space-y-2">
           <span className="text-2xl font-bold text-gradient">Portfolio</span>
           <p className="text-sm text-muted-foreground text-center lg:text-left">
-            © 2024 TALLA Daryl. Créé avec
+            © 2023 TALLA Daryl.
         
           </p>
         </div>

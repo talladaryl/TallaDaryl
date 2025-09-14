@@ -28,11 +28,14 @@ const Hero = () => {
   ];
 
   const socials = [
-    { icon: <Phone size={28} />, link: "https://wa.me/237 658 840 985" }, // WhatsApp
+    { icon: <Phone size={28} />, link: "https://wa.me/237658840985" }, // WhatsApp
     { icon: <Facebook size={28} />, link: "https://facebook.com/" },
-    { icon: <Twitter size={28} />, link: "https://x.com/" },
-    { icon: <Github size={28} />, link: "https://github.com/" },
-    { icon: <Linkedin size={28} />, link: "https://linkedin.com/in/" },
+    { icon: <Twitter size={28} />, link: "https://twitter.com/DarylT.A.D/" },
+    { icon: <Github size={28} />, link: "https://www.github.com/talladaryl/" },
+    {
+      icon: <Linkedin size={28} />,
+      link: "https://www.linkedin.com/in/daryl-talla/",
+    },
   ];
 
   return (

@@ -57,9 +57,9 @@ const About = () => {
     },
     {
       year: "2024",
-      title: "Déploiement et projets avancés",
+      title: "Développement Web",
       description:
-        "Déploiement d’applications cloud et développement full-stack avancé.",
+        "Création de plusieurs projets web professionnels full-stack.",
       company: "Shalom Technologie",
       icons: [
         <SiNextdotjs key="nextjs" className="w-6 h-6 text-[#4ade80]" />,
