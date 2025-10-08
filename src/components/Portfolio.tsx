@@ -41,7 +41,8 @@ const Portfolio = () => {
       longDescription:
         "Une plateforme e-commerce complète développée avec React et Node.js, intégrant Stripe et dashboard admin.",
       technologies: ["React", "Node.js", "MongoDB", "Tailwind", "figma"],
-      liveUrl: "https://fastdeal-afri-store.vercel.app/",
+      liveUrl: "",
+      // https://fastdeal-afri-store.vercel.app/
       githubUrl: "https://github.com/talladaryl/fastdeal-afri-store.git",
     },
     {
@@ -53,7 +54,8 @@ const Portfolio = () => {
       longDescription:
         "Application cross-platform React Native, suivi d'exercices et planification personnalisée.",
       technologies: ["Reactjs", "sql", "tailwind", "figma"],
-      liveUrl: "https://everblue-invitations.vercel.app/",
+      liveUrl: "",
+      // https://everblue-invitations.vercel.app/
       githubUrl: "https://github.com/talladaryl/everblue-invitations.git",
     },
     {
@@ -63,7 +65,7 @@ const Portfolio = () => {
       image: project3,
       description: "Solution ERP, Rohi ordonnateur",
       longDescription:
-        "Site restaurant moderne avec galerie photos, système de réservation et réseaux sociaux.",
+        "application web de gestion des CTD",
       technologies: ["Codeigniter", "javaScript", "Bootstrap", "MySQL"],
       liveUrl: "",
       githubUrl: "https://github.com/example",
